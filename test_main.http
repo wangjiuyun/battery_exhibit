@@ -1,0 +1,32 @@
+DELETE http://localhost:8000/heartbeat/103
+Content-Type: application/json
+
+
+###
+PUT http://localhost:8000/heartbeat/100
+Content-Type: application/json
+
+{
+   "power": 90
+}
+
+
+###
+POST http://localhost:8000/heartbeat
+Content-Type: application/json
+
+{
+  "time": "2025-07-11T23:00:01",
+  "machine": "啊吧啊吧",
+  "power": 100
+}
+
+###
+GET http://localhost:8000/heartbeat/100
+Accept: application/json
+
+###
+GET http://localhost:8000/hearbeats
+Accept: application/json
+
+
